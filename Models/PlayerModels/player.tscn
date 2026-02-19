@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://diakjiekk05f"]
+
+[ext_resource type="Texture2D" uid="uid://of6ci4sxnf2o" path="res://Assets/PlayerASSets/Knight.png" id="1_g50nq"]
+[ext_resource type="Script" uid="uid://dgs8u7m044qyh" path="res://Scripts/PlayerScripts/Player.cs" id="2_4j8y2"]
+
+[node name="Player" type="Sprite2D"]
+position = Vector2(598, 322)
+scale = Vector2(0.16282345, 0.16282345)
+texture = ExtResource("1_g50nq")
+script = ExtResource("2_4j8y2")

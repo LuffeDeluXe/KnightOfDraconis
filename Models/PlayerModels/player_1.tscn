@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3du6b1xi783u"]
+
+[ext_resource type="Texture2D" uid="uid://of6ci4sxnf2o" path="res://Assets/PlayerASSets/Knight.png" id="1_bic55"]
+[ext_resource type="Script" uid="uid://elqlm6v3wojh" path="res://Scripts/PlayerScripts/Player1.cs" id="1_tggd8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tggd8"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bic55")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jxahg"]
+radius = 30.05
+height = 108.87
+
+[node name="Player1" type="Area2D"]
+script = ExtResource("1_tggd8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 310)
+scale = Vector2(0.12, 0.12)
+sprite_frames = SubResource("SpriteFrames_tggd8")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(555, 313)
+shape = SubResource("CapsuleShape2D_jxahg")

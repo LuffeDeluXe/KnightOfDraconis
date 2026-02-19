@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvvk8wkwrt4sp"]
+
+[ext_resource type="PackedScene" uid="uid://diakjiekk05f" path="res://Models/PlayerModels/player.tscn" id="1_b5ayd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_b5ayd")]
+
+[node name="Timer" type="Timer" parent="Player"]
+autostart = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 103.0
+offset_top = 169.0
+offset_right = 264.0
+offset_bottom = 237.0
+text = "Toggle Motion"
+
+[connection signal="pressed" from="Button" to="Player" method="OnButtonPressed"]
