@@ -1,15 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://bvvk8wkwrt4sp"]
+[gd_scene format=3 uid="uid://bvvk8wkwrt4sp"]
 
 [ext_resource type="PackedScene" uid="uid://diakjiekk05f" path="res://Models/PlayerModels/player.tscn" id="1_b5ayd"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1341766692]
 
-[node name="Player" parent="." instance=ExtResource("1_b5ayd")]
+[node name="Player" parent="." unique_id=1416985306 instance=ExtResource("1_b5ayd")]
+position = Vector2(201.44482, 424.68753)
+scale = Vector2(0.11178297, 0.11178297)
 
-[node name="Timer" type="Timer" parent="Player"]
+[node name="Timer" type="Timer" parent="Player" unique_id=1468558854]
 autostart = true
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=772801845]
 offset_left = 103.0
 offset_top = 169.0
 offset_right = 264.0
