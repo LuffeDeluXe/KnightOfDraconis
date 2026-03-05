@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b05ltdxhpj3lv"]
+
+[ext_resource type="Texture2D" uid="uid://b22s4f42y6q0b" path="res://Assets/EnemyAssets/HalmGut.png" id="1_ejg12"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0juk5"]
+size = Vector2(77, 88)
+
+[node name="Mob" type="RigidBody2D" unique_id=150907743]
+metadata/_edit_group_ = true
+
+[node name="HalmGut" type="Sprite2D" parent="." unique_id=371446745]
+position = Vector2(-5.9604645e-08, 9.094947e-13)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_ejg12")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1602293864]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_0juk5")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1433042244]
